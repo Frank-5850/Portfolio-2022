@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const NavContainer = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+`;
+
 export const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
