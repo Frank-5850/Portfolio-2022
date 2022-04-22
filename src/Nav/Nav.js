@@ -25,7 +25,6 @@ const Nav = () => {
           <NavItem>
             <NavLink href="#contact">Contact</NavLink>
           </NavItem>
-
           <Resume>Resume</Resume>
         </NavGroup>
       </NavWrapper>

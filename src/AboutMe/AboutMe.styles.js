@@ -30,6 +30,7 @@ export const PhotoSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
   width: 50%;
 `;
 
@@ -38,15 +39,18 @@ export const Photo = styled.img`
 `;
 
 export const SectionTitle = styled.h1`
-  margin: 0;
+  margin: 0 0 10px 0;
 `;
 
 export const SectionText = styled.p`
-  margin: 0;
+  margin: 10px 0;
 `;
 
 export const SkillSection = styled.ul`
   margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  height: 20%;
 `;
 
 export const Skills = styled.li`
