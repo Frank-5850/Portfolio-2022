@@ -14,7 +14,7 @@ import {
 
 const AboutMe = () => {
   return (
-    <AboutMeWrapper>
+    <AboutMeWrapper id="aboutMe">
       <AboutMeContainer>
         <AboutMeSection>
           <SectionTitle>About Me</SectionTitle>

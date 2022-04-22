@@ -5,6 +5,7 @@ import {
   NavItem,
   Resume,
   NavContainer,
+  NavLink,
 } from "./nav.styles";
 
 const Nav = () => {
@@ -15,9 +16,16 @@ const Nav = () => {
           <NavItem>logo</NavItem>
         </NavGroup>
         <NavGroup>
-          <NavItem>About</NavItem>
-          <NavItem>Work</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem>
+            <NavLink href="#aboutMe">About</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#work">Work</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#contact">Contact</NavLink>
+          </NavItem>
+
           <Resume>Resume</Resume>
         </NavGroup>
       </NavWrapper>

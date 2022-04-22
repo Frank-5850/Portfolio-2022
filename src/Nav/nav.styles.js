@@ -27,6 +27,16 @@ export const NavItem = styled.li`
   margin: 0;
 `;
 
+export const NavLink = styled.a`
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+`;
+
 export const Resume = styled.li`
   list-style: none;
   padding: 0.5rem;
