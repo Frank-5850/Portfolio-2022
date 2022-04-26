@@ -7,5 +7,4 @@ export const ContactWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: beige;
 `;

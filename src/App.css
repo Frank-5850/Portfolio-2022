@@ -1,4 +1,6 @@
 * {
-  color: #065a60;
+  background-color: #6c757d;
+  color: white;
   scroll-behavior: smooth;
+  font-weight: bold;
 }

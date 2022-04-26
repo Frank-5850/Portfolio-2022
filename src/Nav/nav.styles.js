@@ -4,6 +4,7 @@ export const NavContainer = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 `;
 
 export const NavWrapper = styled.nav`
@@ -11,7 +12,6 @@ export const NavWrapper = styled.nav`
   justify-content: space-between;
   margin: 0;
   padding: 50px 150px 0 150px;
-  background: grey;
 `;
 
 export const NavGroup = styled.ul`

@@ -25,7 +25,9 @@ const Nav = () => {
           <NavItem>
             <NavLink href="#contact">Contact</NavLink>
           </NavItem>
-          <Resume>Resume</Resume>
+          <Resume>
+            <NavLink>Resume</NavLink>
+          </Resume>
         </NavGroup>
       </NavWrapper>
     </NavContainer>

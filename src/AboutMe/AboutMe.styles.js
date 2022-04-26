@@ -7,7 +7,6 @@ export const AboutMeWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: darkgrey;
 `;
 
 export const AboutMeContainer = styled.div`
@@ -21,7 +20,6 @@ export const AboutMeContainer = styled.div`
 export const AboutMeSection = styled.div`
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   height: 50vh;
   width: 50vw;
 `;
@@ -32,9 +30,12 @@ export const PhotoSection = styled.div`
   justify-content: center;
   height: 100%;
   width: 50%;
+  // padding: 10px;
 `;
 
 export const Photo = styled.img`
+  width: 400px;
+  height: 400px;
   object-fit: contain;
 `;
 

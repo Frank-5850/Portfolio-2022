@@ -7,7 +7,6 @@ export const LandingPageWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: lightgrey;
 `;
 
 export const LandingPageContainer = styled.div`
