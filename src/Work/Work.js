@@ -1,5 +1,6 @@
-import React from "react";
-import weather from "../assets/ProjectPhotos/Weather.JPG";
+import React, { useEffect, useState } from "react";
+import weather from "../assets/ProjectPhotos/weather.jpg";
+import eastBay from "../assets/ProjectPhotos/EastBay.jpg";
 import {
   WorkWrapper,
   WorkContainer,
@@ -16,50 +17,122 @@ import {
   WorkLink,
   GithubIcon,
   WebsiteIcon,
+  CarouselController,
+  CarouselButton,
+  CurrentProjectIcon,
 } from "./Work.styles";
 
 const Work = () => {
+  const [project, setProject] = useState();
+  const [projects, setProjects] = useState([
+    {
+      name: "Weather App",
+      description:
+        "Simple weather application build using the Open-Weather API. Users are able to get the weather, 24 hour forecast and 7 day forecast for their current location or search a location.",
+      link: "https://glassmorphic-weather.herokuapp.com/home",
+      github: "https://github.com/Frank-5850/weather-react",
+      tech: [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "OpenWeatherMap",
+        "styled-components",
+      ],
+      photo: weather,
+    },
+    {
+      name: "East Bay Recorders",
+      description:
+        "East Bay Recorders is an intimate, vibey studio where real music gets made. I had the pleasure to modernize the front-end with Andrew Spivey.",
+      link: "eastbayrecorders.com",
+      github: "https://github.com/andrewjspivey/eastbay_recorders",
+      tech: [
+        "React",
+        "Node",
+        "styled-components",
+        "Material UI",
+        "React-Router",
+      ],
+      photo: eastBay,
+    },
+    // {
+    //   name: "East Bay Recorders",
+    //   description: "",
+    //   link: "eastbayrecorders.com",
+    //   github: "https://github.com/andrewjspivey/eastbay_recorders",
+    //   tech: [
+    //     "React",
+    //     "Node",
+    //     "styled-components",
+    //     "Material UI",
+    //     "React-Router",
+    //   ],
+    //   photo: eastBay,
+    // },
+  ]);
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setProject(projects[index]);
+  }, [index]);
+
+  const nextProject = () => {
+    if (index === projects.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
+  };
+
+  const prevProject = () => {
+    if (index === 0) {
+      setIndex(projects.length - 1);
+    } else {
+      setIndex(index - 1);
+    }
+  };
+
   return (
     <WorkWrapper id="work">
       <WorkContainer>
         <SectionTitle>Work</SectionTitle>
-        <WorkCarousel>
-          <PhotoLink
-            href="https://glassmorphic-weather.herokuapp.com/home"
-            target="_blank"
-          >
-            <WorkPhoto src={weather} />
-          </PhotoLink>
-          <WorkDetailContainer>
-            <WorkTitle>Weather App</WorkTitle>
-            <WorkDetail>
-              Simple weather application build using the Open-Weather API. Users
-              are able to get the weather, 24 hour forecast and 7 day forecast
-              for their current location or search a location.
-            </WorkDetail>
-            <TechList>
-              <Tech>React</Tech>
-              <Tech>Open-Weather API</Tech>
-              <Tech>Styled-Components</Tech>
-              <Tech>Express</Tech>
-              <Tech>Heroku</Tech>
-            </TechList>
-            <WorkLinkContainer>
-              <WorkLink
-                href="https://github.com/Frank-5850/weather-react"
-                target="_blank"
-              >
-                <GithubIcon />
-              </WorkLink>
-              <WorkLink
-                href="https://glassmorphic-weather.herokuapp.com/home"
-                target="_blank"
-              >
-                <WebsiteIcon />
-              </WorkLink>
-            </WorkLinkContainer>
-          </WorkDetailContainer>
-        </WorkCarousel>
+        {project && (
+          <WorkCarousel>
+            <PhotoLink href={project.link} target="_blank">
+              <WorkPhoto src={project.photo} alt={project.name} />
+            </PhotoLink>
+            <WorkDetailContainer>
+              <WorkTitle>{project.name}</WorkTitle>
+              <WorkDetail>{project.description}</WorkDetail>
+              <TechList>
+                {project.tech.map((tech) => (
+                  <Tech key={tech}>{tech}</Tech>
+                ))}
+              </TechList>
+              <WorkLinkContainer>
+                <WorkLink href={project.github} target="_blank">
+                  <GithubIcon />
+                </WorkLink>
+                <WorkLink href={project.link} target="_blank">
+                  <WebsiteIcon />
+                </WorkLink>
+              </WorkLinkContainer>
+            </WorkDetailContainer>
+          </WorkCarousel>
+        )}
+        <CarouselController>
+          <CarouselButton onClick={() => prevProject()}>{" < "}</CarouselButton>
+          {projects.map((project, i) => (
+            <CurrentProjectIcon
+              onClick={() => setIndex(i)}
+              fill={i === index ? "black" : "white"}
+              key={i}
+            />
+          ))}
+          <CarouselButton onClick={() => nextProject()}> > </CarouselButton>
+        </CarouselController>
       </WorkContainer>
     </WorkWrapper>
   );

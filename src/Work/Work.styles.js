@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaGithubSquare } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
+import { RiCheckboxBlankCircleLine } from "react-icons/ri";
 
 export const WorkWrapper = styled.div`
   display: flex;
@@ -36,7 +37,6 @@ export const PhotoLink = styled.a`
 export const WorkPhoto = styled.img`
   width: 600px;
   height: 400px;
-  object-fit: contain;
   border-radius: 5px;
 `;
 
@@ -104,4 +104,26 @@ export const WebsiteIcon = styled(MdOpenInNew)`
   font-size: 1.5em;
   margin: 0 5px;
   background-color: black;
+`;
+
+export const CarouselController = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0;
+`;
+
+export const CarouselButton = styled.button`
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0 10px;
+`;
+
+export const CurrentProjectIcon = styled(RiCheckboxBlankCircleLine)`
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
 `;
