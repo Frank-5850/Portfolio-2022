@@ -20,6 +20,8 @@ import {
   CarouselController,
   CarouselButton,
   CurrentProjectIcon,
+  CarouselButtonLeft,
+  CarouselButtonRight,
 } from "./Work.styles";
 
 const Work = () => {
@@ -123,7 +125,9 @@ const Work = () => {
           </WorkCarousel>
         )}
         <CarouselController>
-          <CarouselButton onClick={() => prevProject()}>{" < "}</CarouselButton>
+          <CarouselButton onClick={() => prevProject()}>
+            <CarouselButtonLeft />
+          </CarouselButton>
           {projects.map((project, i) => (
             <CurrentProjectIcon
               onClick={() => setIndex(i)}
@@ -131,7 +135,9 @@ const Work = () => {
               key={i}
             />
           ))}
-          <CarouselButton onClick={() => nextProject()}> > </CarouselButton>
+          <CarouselButton onClick={() => nextProject()}>
+            <CarouselButtonRight />
+          </CarouselButton>
         </CarouselController>
       </WorkContainer>
     </WorkWrapper>

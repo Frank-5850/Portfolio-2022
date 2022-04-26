@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { FaGithubSquare } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
-import { RiCheckboxBlankCircleLine } from "react-icons/ri";
+import {
+  RiCheckboxBlankCircleLine,
+  RiArrowRightSLine,
+  RiArrowLeftSLine,
+} from "react-icons/ri";
 
 export const WorkWrapper = styled.div`
   display: flex;
@@ -117,7 +121,20 @@ export const CarouselController = styled.div`
 export const CarouselButton = styled.button`
   color: white;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5em;
+`;
+
+export const CarouselButtonLeft = styled(RiArrowLeftSLine)`
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+`;
+
+export const CarouselButtonRight = styled(RiArrowRightSLine)`
+  color: white;
   cursor: pointer;
   margin: 0 10px;
 `;
