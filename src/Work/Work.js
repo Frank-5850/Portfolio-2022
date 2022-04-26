@@ -1,18 +1,19 @@
 import React from "react";
 import weather from "../assets/ProjectPhotos/Weather.JPG";
 import {
-  SectionTitle,
-  WorkContainer,
-  WorkTitle,
   WorkWrapper,
+  WorkContainer,
+  SectionTitle,
   WorkCarousel,
+  PhotoLink,
   WorkPhoto,
   WorkDetailContainer,
-  Tech,
-  TechList,
+  WorkTitle,
   WorkDetail,
-  WorkLink,
+  TechList,
+  Tech,
   WorkLinkContainer,
+  WorkLink,
 } from "./Work.styles";
 
 const Work = () => {
@@ -21,7 +22,12 @@ const Work = () => {
       <WorkContainer>
         <SectionTitle>Work</SectionTitle>
         <WorkCarousel>
-          <WorkPhoto src={weather} />
+          <PhotoLink
+            href="https://glassmorphic-weather.herokuapp.com/home"
+            target="_blank"
+          >
+            <WorkPhoto src={weather} />
+          </PhotoLink>
           <WorkDetailContainer>
             <WorkTitle>Weather App</WorkTitle>
             <WorkDetail>

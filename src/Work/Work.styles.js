@@ -12,7 +12,6 @@ export const WorkWrapper = styled.div`
 export const WorkContainer = styled.div`
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   height: 50vh;
   width: 60vw;
 `;
@@ -20,10 +19,15 @@ export const WorkContainer = styled.div`
 export const SectionTitle = styled.h1`
   margin: 0 0 10px 0;
 `;
+
 export const WorkCarousel = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+`;
+
+export const PhotoLink = styled.a`
+  text-decoration: none;
 `;
 
 export const WorkPhoto = styled.img`
@@ -44,6 +48,18 @@ export const WorkDetailContainer = styled.div`
   z-index: 1;
   padding: 10px;
 `;
+
+export const WorkTitle = styled.h1`
+  margin: 0 10px 10px 0;
+  background-color: black;
+  align-self: end;
+`;
+
+export const WorkDetail = styled.p`
+  margin: 10px 0;
+  background-color: black;
+`;
+
 export const TechList = styled.ul`
   margin: 0;
   display: flex;
@@ -52,28 +68,22 @@ export const TechList = styled.ul`
   background-color: black;
   padding: 0;
 `;
+
 export const Tech = styled.li`
   list-style: none;
   margin: 0;
   background-color: black;
 `;
 
-export const WorkTitle = styled.h1`
-  margin: 0 10px 10px 0;
-  background-color: black;
-  align-self: end;
-`;
-export const WorkDetail = styled.p`
-  margin: 10px 0;
-  background-color: black;
-`;
 export const WorkLinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   background-color: black;
 `;
+
 export const WorkLink = styled.a`
+  text-decoration: none;
   margin: 10px;
   background-color: black;
 `;
