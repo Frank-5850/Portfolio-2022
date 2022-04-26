@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavContainer = styled.div`
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 5px;
@@ -14,6 +14,9 @@ export const NavWrapper = styled.nav`
   justify-content: space-between;
   margin: 0;
   padding: 50px 150px 0 150px;
+  @media (max-width: 320px) {
+    padding 10px;
+  }
 `;
 
 export const NavGroup = styled.ul`
@@ -35,6 +38,10 @@ export const LogoImg = styled.img`
   height: 60px;
   object-fit: contain;
   border-radius: 4px;
+  @media (max-width: 320px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const NavLink = styled.a`
@@ -44,6 +51,9 @@ export const NavLink = styled.a`
   cursor: pointer;
   &:hover {
     color: black;
+  }
+  @media (max-width: 320px) {
+    font-size: 0.8em;
   }
 `;
 

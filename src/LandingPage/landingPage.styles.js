@@ -7,6 +7,9 @@ export const LandingPageWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 320px) {
+    height: 80vh;
+  }
 `;
 
 export const LandingPageContainer = styled.div`
@@ -15,7 +18,7 @@ export const LandingPageContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-  @media (max-width: 414px) {
+  @media (max-width: 320px) {
     height: 100vh;
     width: 100vw;
   }
