@@ -5,6 +5,7 @@ export const NavContainer = styled.div`
   top: 0;
   width: 100%;
   z-index: 2;
+  border-bottom: 1px solid #e6e6e6;
 `;
 
 export const NavWrapper = styled.nav`
@@ -25,6 +26,13 @@ export const NavItem = styled.li`
   list-style: none;
   padding: 0.5rem;
   margin: 0;
+`;
+
+export const LogoImg = styled.img`
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 5px;
 `;
 
 export const NavLink = styled.a`

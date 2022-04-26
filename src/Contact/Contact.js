@@ -4,7 +4,6 @@ import {
   ContactLink,
   ContactMessage,
   ContactWrapper,
-  SectionTitle,
 } from "./Contact.styles";
 
 const Contact = () => {

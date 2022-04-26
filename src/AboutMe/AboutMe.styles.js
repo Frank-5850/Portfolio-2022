@@ -56,4 +56,5 @@ export const Photo = styled.img`
   width: 400px;
   height: 400px;
   object-fit: contain;
+  border-radius: 5px;
 `;

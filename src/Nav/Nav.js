@@ -6,14 +6,18 @@ import {
   Resume,
   NavContainer,
   NavLink,
+  LogoImg,
 } from "./nav.styles";
+import logo from "../assets/FP.png";
 
 const Nav = () => {
   return (
     <NavContainer>
       <NavWrapper>
-        <NavGroup>
-          <NavItem>logo</NavItem>
+        <NavGroup style={{ padding: "0" }}>
+          <NavItem style={{ padding: "0" }}>
+            <LogoImg src={logo} alt="" />
+          </NavItem>
         </NavGroup>
         <NavGroup>
           <NavItem>

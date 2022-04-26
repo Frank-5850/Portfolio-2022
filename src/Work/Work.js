@@ -14,6 +14,8 @@ import {
   Tech,
   WorkLinkContainer,
   WorkLink,
+  GithubIcon,
+  WebsiteIcon,
 } from "./Work.styles";
 
 const Work = () => {
@@ -47,13 +49,13 @@ const Work = () => {
                 href="https://github.com/Frank-5850/weather-react"
                 target="_blank"
               >
-                Github
+                <GithubIcon />
               </WorkLink>
               <WorkLink
                 href="https://glassmorphic-weather.herokuapp.com/home"
                 target="_blank"
               >
-                website
+                <WebsiteIcon />
               </WorkLink>
             </WorkLinkContainer>
           </WorkDetailContainer>

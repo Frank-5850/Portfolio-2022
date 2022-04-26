@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { FaGithubSquare } from "react-icons/fa";
+import { MdOpenInNew } from "react-icons/md";
 
 export const WorkWrapper = styled.div`
   display: flex;
@@ -13,7 +15,7 @@ export const WorkContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 50vh;
-  width: 60vw;
+  width: 50vw;
 `;
 
 export const SectionTitle = styled.h1`
@@ -28,12 +30,14 @@ export const WorkCarousel = styled.div`
 
 export const PhotoLink = styled.a`
   text-decoration: none;
+  border-radius: 5px;
 `;
 
 export const WorkPhoto = styled.img`
   width: 600px;
   height: 400px;
   object-fit: contain;
+  border-radius: 5px;
 `;
 
 export const WorkDetailContainer = styled.div`
@@ -47,6 +51,7 @@ export const WorkDetailContainer = styled.div`
   right: 0;
   z-index: 1;
   padding: 10px;
+  border-radius: 5px;
 `;
 
 export const WorkTitle = styled.h1`
@@ -84,6 +89,19 @@ export const WorkLinkContainer = styled.div`
 
 export const WorkLink = styled.a`
   text-decoration: none;
-  margin: 10px;
+  margin: 0 5px;
+  background-color: black;
+`;
+
+export const GithubIcon = styled(FaGithubSquare)`
+  color: white;
+  font-size: 1.5em;
+  margin: 0 5px;
+  background-color: black;
+`;
+export const WebsiteIcon = styled(MdOpenInNew)`
+  color: white;
+  font-size: 1.5em;
+  margin: 0 5px;
   background-color: black;
 `;
