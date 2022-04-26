@@ -17,12 +17,12 @@ export const LandingPageContainer = styled.div`
   width: 50vw;
 `;
 
-export const HeaderText = styled.h1`
-  font-size: 3em;
+export const Greeting = styled.h3`
   margin: 0 50px;
 `;
 
-export const Greeting = styled.h3`
+export const HeaderText = styled.h1`
+  font-size: 3em;
   margin: 0 50px;
 `;
 

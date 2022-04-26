@@ -24,21 +24,6 @@ export const AboutMeSection = styled.div`
   width: 50vw;
 `;
 
-export const PhotoSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 50%;
-  // padding: 10px;
-`;
-
-export const Photo = styled.img`
-  width: 400px;
-  height: 400px;
-  object-fit: contain;
-`;
-
 export const SectionTitle = styled.h1`
   margin: 0 0 10px 0;
 `;
@@ -56,4 +41,19 @@ export const SkillSection = styled.ul`
 
 export const Skills = styled.li`
   margin: 0;
+`;
+
+export const PhotoSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  // padding: 10px;
+`;
+
+export const Photo = styled.img`
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
 `;
