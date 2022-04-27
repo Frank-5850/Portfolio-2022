@@ -7,6 +7,9 @@ export const AboutMeWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 320px) {
+    margin: 25px 0;
+  }
 `;
 
 export const AboutMeContainer = styled.div`
@@ -15,6 +18,12 @@ export const AboutMeContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
+  @media (max-width: 320px) {
+    width: 100vw;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+  }
 `;
 
 export const AboutMeSection = styled.div`
@@ -22,10 +31,17 @@ export const AboutMeSection = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 50vw;
+  @media (max-width: 320px) {
+    height: 100vh;
+    width: 95vw;
+  }
 `;
 
 export const SectionTitle = styled.h1`
   margin: 0 0 10px 0;
+  @media (max-width: 320px) {
+    margin: 0;
+  }
 `;
 
 export const SectionText = styled.p`
@@ -37,6 +53,9 @@ export const SkillSection = styled.ul`
   display: flex;
   flex-flow: column wrap;
   height: 20%;
+  @media (max-width: 320px) {
+    flex-flow: column;
+  }
 `;
 
 export const Skills = styled.li`
@@ -49,7 +68,11 @@ export const PhotoSection = styled.div`
   justify-content: center;
   height: 100%;
   width: 50%;
-  // padding: 10px;
+  @media (max-width: 320px) {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+  }
 `;
 
 export const Photo = styled.img`
@@ -57,4 +80,7 @@ export const Photo = styled.img`
   height: 400px;
   object-fit: contain;
   border-radius: 5px;
+  @media (max-width: 320px) {
+    width: 80vw;
+  }
 `;

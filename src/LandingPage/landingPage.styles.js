@@ -8,7 +8,8 @@ export const LandingPageWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   @media (max-width: 320px) {
-    height: 80vh;
+    height: 70vh;
+    width: auto;
   }
 `;
 
@@ -19,7 +20,7 @@ export const LandingPageContainer = styled.div`
   height: 50vh;
   width: 50vw;
   @media (max-width: 320px) {
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
   }
 `;

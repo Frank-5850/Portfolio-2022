@@ -7,6 +7,9 @@ export const ContactWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 320px) {
+    height: 50vh;
+  }
 `;
 
 export const ContactContainer = styled.div`
@@ -16,10 +19,9 @@ export const ContactContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-`;
-
-export const SectionTitle = styled.h1`
-  margin: 0 0 10px 0;
+  @media (max-width: 320px) {
+    width: 100vw;
+  }
 `;
 
 export const ContactLink = styled.a`
