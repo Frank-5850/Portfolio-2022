@@ -7,6 +7,10 @@ export const LandingPageWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 375px) {
+    height: 70vh;
+    width: auto;
+  }
   @media (max-width: 320px) {
     height: 70vh;
     width: auto;
@@ -19,6 +23,10 @@ export const LandingPageContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
+  @media (max-width: 375px) {
+    height: 60vh;
+    width: 100vw;
+  }
   @media (max-width: 320px) {
     height: 60vh;
     width: 100vw;
@@ -32,8 +40,11 @@ export const Greeting = styled.h3`
 export const HeaderText = styled.h1`
   font-size: 3em;
   margin: 0 50px;
-  @media (max-width: 414px) {
+  @media (max-width: 375px) {
     font-size: 2em;
+  }
+  @media (max-width: 320px) {
+    font-size: 1em;
   }
 `;
 

@@ -7,6 +7,9 @@ export const AboutMeWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 375px) {
+    margin: 25px 0;
+  }
   @media (max-width: 320px) {
     margin: 25px 0;
   }
@@ -18,6 +21,15 @@ export const AboutMeContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
+
+  @media (max-width: 375px) {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    // margin: 10px;
+    // align-items: center;
+  }
+
   @media (max-width: 320px) {
     width: 100vw;
     flex-direction: column;
@@ -31,6 +43,10 @@ export const AboutMeSection = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 50vw;
+  @media (max-width: 375px) {
+    height: 100vh;
+    width: 95vw;
+  }
   @media (max-width: 320px) {
     height: 100vh;
     width: 95vw;
@@ -68,6 +84,11 @@ export const PhotoSection = styled.div`
   justify-content: center;
   height: 100%;
   width: 50%;
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+  }
   @media (max-width: 320px) {
     width: 100%;
     height: 300px;
@@ -80,6 +101,9 @@ export const Photo = styled.img`
   height: 400px;
   object-fit: contain;
   border-radius: 5px;
+  @media (max-width: 375px) {
+    width: 80vw;
+  }
   @media (max-width: 320px) {
     width: 80vw;
   }

@@ -7,6 +7,15 @@ export const NavContainer = styled.div`
   z-index: 2;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 5px;
+  @media (max-width: 425px) {
+    padding: 0;
+  }
+  @media (max-width: 375px) {
+    padding: 0;
+  }
+  @media (max-width: 320px) {
+    padding: 0;
+  }
 `;
 
 export const NavWrapper = styled.nav`
@@ -14,8 +23,14 @@ export const NavWrapper = styled.nav`
   justify-content: space-between;
   margin: 0;
   padding: 50px 150px 0 150px;
+  @media (max-width: 425px) {
+    padding: 10px;
+  }
+  @media (max-width: 375px) {
+    padding: 10px;
+  }
   @media (max-width: 320px) {
-    padding 10px;
+    padding: 10px;
   }
 `;
 
@@ -38,6 +53,10 @@ export const LogoImg = styled.img`
   height: 60px;
   object-fit: contain;
   border-radius: 4px;
+  @media (max-width: 375px) {
+    width: 50px;
+    height: 50px;
+  }
   @media (max-width: 320px) {
     width: 40px;
     height: 40px;
@@ -51,6 +70,9 @@ export const NavLink = styled.a`
   cursor: pointer;
   &:hover {
     color: black;
+  }
+  @media (max-width: 375px) {
+    font-size: 1em;
   }
   @media (max-width: 320px) {
     font-size: 0.8em;
