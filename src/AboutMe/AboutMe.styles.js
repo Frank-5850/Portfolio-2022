@@ -25,6 +25,11 @@ export const AboutMeContainer = styled.div`
   height: 50vh;
   width: 50vw;
 
+  @media (max-width: 768px) {
+    width: 90vw;
+    align-items: center;
+  }
+
   @media (max-width: 425px) {
     width: 100vw;
     flex-direction: column;
@@ -95,6 +100,12 @@ export const PhotoSection = styled.div`
   justify-content: center;
   height: 100%;
   width: 50%;
+  @media (max-width: 768px) {
+    // width: 100%;
+    // width: 300px;
+    height: 300px;
+    align-items: center;
+  }
   @media (max-width: 425px) {
     width: 100%;
     height: 300px;
@@ -117,6 +128,10 @@ export const Photo = styled.img`
   height: 400px;
   object-fit: contain;
   border-radius: 5px;
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
   @media (max-width: 425px) {
     width: 80vw;
   }

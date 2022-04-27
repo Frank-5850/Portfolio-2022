@@ -30,6 +30,10 @@ export const WorkContainer = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 50vw;
+  @media (max-width: 768px) {
+    width: 90vw;
+    padding: 10px;
+  }
   @media (max-width: 425px) {
     width: 100vw;
   }
@@ -58,6 +62,10 @@ export const WorkCarousel = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  @media (max-width: 768px) {
+    justify-content: center;
+    // flex-direction: column;
+  }
   @media (max-width: 425px) {
     justify-content: center;
     flex-direction: column;
