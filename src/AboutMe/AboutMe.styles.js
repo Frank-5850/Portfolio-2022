@@ -7,13 +7,7 @@ export const AboutMeWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  @media (max-width: 425px) {
-    margin: 25px 0;
-  }
-  @media (max-width: 375px) {
-    margin: 25px 0;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 425px) {
     margin: 25px 0;
   }
 `;
@@ -24,32 +18,13 @@ export const AboutMeContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-
-  @media (max-width: 1024px) {
+  @media (min-width: 426px) and (max-width: 1024px) {
     width: 90vw;
     align-items: center;
   }
-  @media (max-width: 768px) {
-    width: 90vw;
-    align-items: center;
-  }
-
-  @media (max-width: 425px) {
+  @media (min-width: 100px) and (max-width: 425px) {
     width: 100vw;
     flex-direction: column;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media (max-width: 320px) {
-    width: 100vw;
-    flex-direction: column;
-    margin: 10px;
     align-items: center;
   }
 `;
@@ -59,15 +34,7 @@ export const AboutMeSection = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 50vw;
-  @media (max-width: 425px) {
-    height: 100vh;
-    width: 95vw;
-  }
-  @media (max-width: 375px) {
-    height: 100vh;
-    width: 95vw;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 425px) {
     height: 100vh;
     width: 95vw;
   }
@@ -104,23 +71,11 @@ export const PhotoSection = styled.div`
   justify-content: center;
   height: 100%;
   width: 50%;
-  @media (max-width: 768px) {
-    // width: 100%;
-    // width: 300px;
+  @media (min-width: 426px) and (max-width: 768px) {
     height: 300px;
     align-items: center;
   }
-  @media (max-width: 425px) {
-    width: 100%;
-    height: 300px;
-    align-items: center;
-  }
-  @media (max-width: 375px) {
-    width: 100%;
-    height: 300px;
-    align-items: center;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 425px) {
     width: 100%;
     height: 300px;
     align-items: center;
@@ -132,17 +87,11 @@ export const Photo = styled.img`
   height: 400px;
   object-fit: contain;
   border-radius: 5px;
-  @media (max-width: 768px) {
+  @media (min-width: 426px) and (max-width: 768px) {
     width: 300px;
     height: 300px;
   }
-  @media (max-width: 425px) {
-    width: 80vw;
-  }
-  @media (max-width: 375px) {
-    width: 80vw;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 425px) {
     width: 80vw;
   }
 `;

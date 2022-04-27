@@ -7,16 +7,7 @@ export const NavContainer = styled.div`
   z-index: 2;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 5px;
-  @media (max-width: 768px) {
-    padding: 0;
-  }
-  @media (max-width: 425px) {
-    padding: 0;
-  }
-  @media (max-width: 375px) {
-    padding: 0;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 768px) {
     padding: 0;
   }
 `;
@@ -26,16 +17,7 @@ export const NavWrapper = styled.nav`
   justify-content: space-between;
   margin: 0;
   padding: 50px 150px 0 150px;
-  @media (max-width: 768px) {
-    padding: 10px;
-  }
-  @media (max-width: 425px) {
-    padding: 10px;
-  }
-  @media (max-width: 375px) {
-    padding: 10px;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 768px) {
     padding: 10px;
   }
 `;

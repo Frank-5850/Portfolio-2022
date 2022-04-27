@@ -7,11 +7,8 @@ export const ContactWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  @media (max-width: 375px) {
-    height: 50vh;
-  }
-  @media (max-width: 320px) {
-    height: 50vh;
+  @media (min-width: 100px) and (max-width: 375px) {
+    height: 60vh;
   }
 `;
 
@@ -22,10 +19,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-  @media (max-width: 375px) {
-    width: 100vw;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 375px) {
     width: 100vw;
   }
 `;

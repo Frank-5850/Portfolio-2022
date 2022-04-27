@@ -7,19 +7,7 @@ export const LandingPageWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  @media (max-width: 768px) {
-    height: 70vh;
-    width: auto;
-  }
-  @media (max-width: 425px) {
-    height: 70vh;
-    width: auto;
-  }
-  @media (max-width: 375px) {
-    height: 70vh;
-    width: auto;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 768px) {
     height: 70vh;
     width: auto;
   }
@@ -31,19 +19,11 @@ export const LandingPageContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-  @media (max-width: 768px) {
+  @media (min-width: 426px) and (max-width: 768px) {
     height: 60vh;
-    width: 100vw;
+    width: 80vw;
   }
-  @media (max-width: 425px) {
-    height: 60vh;
-    width: 100vw;
-  }
-  @media (max-width: 375px) {
-    height: 60vh;
-    width: 100vw;
-  }
-  @media (max-width: 320px) {
+  @media (min-width: 100px) and (max-width: 425px) {
     height: 60vh;
     width: 100vw;
   }
