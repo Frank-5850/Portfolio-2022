@@ -56,6 +56,9 @@ export const Greeting = styled.h3`
 export const HeaderText = styled.h1`
   font-size: 3em;
   margin: 0 50px;
+  @media (max-width: 1024px) {
+    font-size: 2em;
+  }
   @media (max-width: 425px) {
     font-size: 1.5em;
   }
