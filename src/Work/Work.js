@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import weather from "../assets/ProjectPhotos/Weather.JPG";
+import weather from "../assets/ProjectPhotos/Weather.jpg";
 import eastBay from "../assets/ProjectPhotos/EastBay.jpg";
 import {
   WorkWrapper,

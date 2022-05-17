@@ -3,4 +3,10 @@
   color: white;
   scroll-behavior: smooth;
   font-weight: bold;
+  box-sizing: border-box;
+}
+
+#toggler,
+.navbar label {
+  display: none; /*Hide the checkbox and label on large screens.*/
 }

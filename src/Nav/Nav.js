@@ -7,19 +7,24 @@ import {
   NavContainer,
   NavLink,
   LogoImg,
+  ResumeLink,
 } from "./nav.styles";
 import logo from "../assets/FP.png";
 
 const Nav = () => {
   return (
     <NavContainer>
-      <NavWrapper>
+      <NavWrapper className="navbar">
         <NavGroup style={{ padding: "0" }}>
           <NavItem style={{ padding: "0" }}>
-            <LogoImg src={logo} alt="" />
+            <LogoImg src={logo} alt="logo" />
           </NavItem>
         </NavGroup>
-        <NavGroup>
+        <input type="checkbox" id="toggler" />
+        <label for="toggler">
+          <i class="ri-menu-line"></i>
+        </label>
+        <NavGroup className="list">
           <NavItem>
             <NavLink href="#aboutMe">About</NavLink>
           </NavItem>
@@ -30,7 +35,7 @@ const Nav = () => {
             <NavLink href="#contact">Contact</NavLink>
           </NavItem>
           <Resume>
-            <NavLink>Resume</NavLink>
+            <ResumeLink>Resume</ResumeLink>
           </Resume>
         </NavGroup>
       </NavWrapper>

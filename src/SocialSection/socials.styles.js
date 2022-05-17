@@ -21,8 +21,20 @@ export const SocialsContainer = styled.ul`
     content: "";
     display: block;
     width: 1px;
-    height: 90px;
+    height: 300px;
     margin: 0px auto;
     background-color: white;
+  }
+`;
+
+export const IconBox = styled.li`
+  padding: 5px;
+`;
+
+export const IconLink = styled.a`
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: #f5f5f5;
   }
 `;
