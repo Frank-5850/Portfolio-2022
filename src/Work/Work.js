@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import weather from "../assets/ProjectPhotos/Weather.jpg";
-import eastBay from "../assets/ProjectPhotos/EastBay.jpg";
+import weather from "../assets/photos/Weather.jpg";
+import eastBay from "../assets/photos/EastBay.jpg";
 import {
   WorkWrapper,
   WorkContainer,
