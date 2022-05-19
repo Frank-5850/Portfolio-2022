@@ -17,7 +17,9 @@ const Nav = () => {
       <NavWrapper className="navbar">
         <NavGroup style={{ padding: "0" }}>
           <NavItem style={{ padding: "0" }}>
-            <LogoImg src={logo} alt="logo" />
+            <NavLink to="/">
+              <LogoImg src={logo} alt="logo" />
+            </NavLink>
           </NavItem>
         </NavGroup>
         <input type="checkbox" id="toggler" />
