@@ -78,7 +78,7 @@ const Work = () => {
 
   useEffect(() => {
     setProject(projects[index]);
-  }, [index]);
+  }, [index, projects]);
 
   const nextProject = () => {
     if (index === projects.length - 1) {
@@ -105,6 +105,7 @@ const Work = () => {
             <PhotoLink href={project.link} target="_blank">
               <WorkPhoto src={project.photo} alt={project.name} />
             </PhotoLink>
+            c
             <WorkDetailContainer>
               <WorkTitle>{project.name}</WorkTitle>
               <WorkDetail>{project.description}</WorkDetail>
