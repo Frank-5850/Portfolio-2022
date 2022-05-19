@@ -17,7 +17,7 @@ const Nav = () => {
       <NavWrapper className="navbar">
         <NavGroup style={{ padding: "0" }}>
           <NavItem style={{ padding: "0" }}>
-            <NavLink to="/">
+            <NavLink href="/">
               <LogoImg src={logo} alt="logo" />
             </NavLink>
           </NavItem>
