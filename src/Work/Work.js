@@ -26,7 +26,10 @@ import {
 
 const Work = () => {
   const [project, setProject] = useState();
-  const [projects, setProjects] = useState([
+
+  const [index, setIndex] = useState(0);
+
+  const currentProjects = [
     {
       name: "Weather App",
       description:
@@ -58,30 +61,14 @@ const Work = () => {
       ],
       photo: eastBay,
     },
-    // {
-    //   name: "East Bay Recorders",
-    //   description: "",
-    //   link: "eastbayrecorders.com",
-    //   github: "https://github.com/andrewjspivey/eastbay_recorders",
-    //   tech: [
-    //     "React",
-    //     "Node",
-    //     "styled-components",
-    //     "Material UI",
-    //     "React-Router",
-    //   ],
-    //   photo: eastBay,
-    // },
-  ]);
-
-  const [index, setIndex] = useState(0);
+  ];
 
   useEffect(() => {
-    setProject(projects[index]);
-  }, [index, projects]);
+    setProject(currentProjects[index]);
+  }, [index, currentProjects]);
 
   const nextProject = () => {
-    if (index === projects.length - 1) {
+    if (index === currentProjects.length - 1) {
       setIndex(0);
     } else {
       setIndex(index + 1);
@@ -90,7 +77,7 @@ const Work = () => {
 
   const prevProject = () => {
     if (index === 0) {
-      setIndex(projects.length - 1);
+      setIndex(currentProjects.length - 1);
     } else {
       setIndex(index - 1);
     }
@@ -129,7 +116,7 @@ const Work = () => {
           <CarouselButton onClick={() => prevProject()}>
             <CarouselButtonLeft />
           </CarouselButton>
-          {projects.map((project, i) => (
+          {currentProjects.map((project, i) => (
             <CurrentProjectIcon
               onClick={() => setIndex(i)}
               fill={i === index ? "black" : "white"}
