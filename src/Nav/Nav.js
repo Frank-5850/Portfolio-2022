@@ -23,8 +23,8 @@ const Nav = () => {
           </NavItem>
         </NavGroup>
         <input type="checkbox" id="toggler" />
-        <label for="toggler">
-          <i class="ri-menu-line"></i>
+        <label htmlFor="toggler">
+          <i className="ri-menu-line"></i>
         </label>
         <NavGroup className="list">
           <NavItem>
