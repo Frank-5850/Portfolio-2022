@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Portfolio-2022/static/css/main.399ccae5.css",
+    "main.js": "/Portfolio-2022/static/js/main.6893d8dc.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Portfolio-2022/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/profile pic.jpg": "/Portfolio-2022/static/media/profile pic.96f715eb94eece7ff212.jpg",
+    "static/media/EastBay.jpg": "/Portfolio-2022/static/media/EastBay.abb89de6f1d810aeb97a.jpg",
+    "static/media/Weather.jpg": "/Portfolio-2022/static/media/Weather.405ea9b673f4265e55c2.jpg",
+    "static/media/FP.png": "/Portfolio-2022/static/media/FP.855b1655e595a631b726.png",
+    "index.html": "/Portfolio-2022/index.html",
+    "main.399ccae5.css.map": "/Portfolio-2022/static/css/main.399ccae5.css.map",
+    "main.6893d8dc.js.map": "/Portfolio-2022/static/js/main.6893d8dc.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Portfolio-2022/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.399ccae5.css",
+    "static/js/main.6893d8dc.js"
+  ]
+}
