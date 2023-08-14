@@ -53,3 +53,11 @@ export const HeaderText = styled.h1`
 export const Skills = styled.h4`
   margin: 10px 50px;
 `;
+
+export const LandingSocials = styled.div`
+  display: flex;
+  margin: 0px 50px;
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;

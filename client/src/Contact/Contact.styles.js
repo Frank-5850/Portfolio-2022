@@ -8,7 +8,7 @@ export const ContactWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   @media (min-width: 100px) and (max-width: 375px) {
-    height: 60vh;
+    height: 70vh;
   }
 `;
 

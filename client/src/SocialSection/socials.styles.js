@@ -7,6 +7,9 @@ export const SocialsWrapper = styled.div`
   left: 40px;
   right: auto;
   z-index: 10;
+  @media (min-width: 100px) and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const SocialsContainer = styled.ul`
@@ -29,6 +32,8 @@ export const SocialsContainer = styled.ul`
 
 export const IconBox = styled.li`
   padding: 5px;
+  text-decoration: none;
+  list-style-type: none;
 `;
 
 export const IconLink = styled.a`

@@ -31,6 +31,14 @@ const Work = () => {
 
   const currentProjects = [
     {
+      name: "Cup of Peace",
+      description: "Cup of Peace is company ",
+      link: "https://cop-dev-8ea10.web.app",
+      github: undefined,
+      tech: ["React", "Typescript", "Firebase", "Stripe", "Material UI"],
+      photo: weather,
+    },
+    {
       name: "Weather App",
       description:
         "Simple weather application build using the Open-Weather API. Users are able to get the weather, 24 hour forecast and 7 day forecast for their current location or search a location.",
@@ -102,7 +110,7 @@ const Work = () => {
                 ))}
               </TechList>
               <WorkLinkContainer>
-                <WorkLink href={project.github} target="_blank">
+                <WorkLink href={project?.github} target="_blank">
                   <GithubIcon />
                 </WorkLink>
                 <WorkLink href={project.link} target="_blank">

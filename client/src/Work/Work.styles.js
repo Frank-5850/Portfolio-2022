@@ -25,7 +25,7 @@ export const WorkContainer = styled.div`
   height: 50vh;
   width: 50vw;
   @media (min-width: 426px) and (max-width: 1024px) {
-    width: 90vw;
+    width: 70vw;
   }
   @media (min-width: 100px) and (max-width: 425px) {
     width: 100vw;

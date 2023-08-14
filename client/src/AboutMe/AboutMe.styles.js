@@ -19,7 +19,7 @@ export const AboutMeContainer = styled.div`
   height: 50vh;
   width: 50vw;
   @media (min-width: 426px) and (max-width: 1024px) {
-    width: 90vw;
+    width: 75vw;
     align-items: center;
   }
   @media (min-width: 100px) and (max-width: 425px) {
@@ -34,6 +34,11 @@ export const AboutMeSection = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 50vw;
+  padding: 0px 10px;
+  @media (min-width: 426px) and (max-width: 1024px) {
+    height: 50vh;
+    width: 45vw;
+  }
   @media (min-width: 100px) and (max-width: 425px) {
     height: 100vh;
     width: 95vw;
