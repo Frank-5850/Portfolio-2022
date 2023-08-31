@@ -5,21 +5,58 @@ export const NavContainer = styled.div`
   top: 0;
   width: 100vw;
   z-index: 2;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #818589;
   padding-bottom: 5px;
-  @media (min-width: 100px) and (max-width: 768px) {
-    padding: 0;
+  @media (min-width: 100px) and (max-width: 549px) {
+    padding: 10px 0;
+    width: 100vw;
   }
 `;
 
 export const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
-  padding: 50px 150px 0 150px;
-  @media (min-width: 100px) and (max-width: 768px) {
-    padding: 10px;
+  padding: 20px 30px;
+  @media (min-width: 100px) and (max-width: 549px) {
+    padding: 0px;
   }
+`;
+
+export const IconContainer = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+`;
+
+export const HamburgerIconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const HamburgerIcon = styled.div`
+  display: none;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  @media (min-width: 100px) and (max-width: 549px) {
+    padding: 0px;
+    display: block;
+    margin-right: 10px;
+  }
+`;
+
+export const HamburgerLinks = styled.div`
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 `;
 
 export const NavGroup = styled.ul`
@@ -29,11 +66,17 @@ export const NavGroup = styled.ul`
   padding: 0.5rem;
   margin: 0;
   list-style: none;
+  padding: 0;
+  @media (max-width: 549px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li`
   padding: 0.5rem;
   margin: 0;
+  text-decoration: none;
+  list-style-type: none;
 `;
 
 export const LogoImg = styled.img`
@@ -41,19 +84,11 @@ export const LogoImg = styled.img`
   height: 60px;
   object-fit: contain;
   border-radius: 4px;
-  @media (max-width: 375px) {
-    width: 50px;
-    height: 50px;
-  }
-  @media (max-width: 320px) {
-    width: 40px;
-    height: 40px;
-  }
 `;
 
 export const NavLink = styled.a`
   text-decoration: none;
-  color: white;
+  color: #818589;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -61,7 +96,7 @@ export const NavLink = styled.a`
     content: ""; /*Content property must be set else this element will not show up on the page. */
     width: 100%;
     height: 1px;
-    background-color: white;
+    background-color: grey;
     border-radius: 4px; /*Applies roundness to the bar. */
     position: absolute; /*Allows for this element to be moved freely within the parent box that has the position of relative. */
     left: 0; /*Starting left position will be 0. */
@@ -91,14 +126,14 @@ export const NavLink = styled.a`
 export const Resume = styled.li`
   padding: 0.5rem;
   margin: 0;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #818589;
   border-radius: 5px;
   position: relative;
 `;
 
 export const ResumeLink = styled.a`
   text-decoration: none;
-  color: white;
+  color: grey;
   font-weight: bold;
   cursor: pointer;
 `;

@@ -7,8 +7,9 @@ export const LandingPageWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  @media (min-width: 100px) and (max-width: 768px) {
-    height: 70vh;
+  @media (min-width: 100px) and (max-width: 549px) {
+    margin: 20px 0px;
+    height: auto;
     width: auto;
   }
 `;
@@ -19,12 +20,12 @@ export const LandingPageContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-  @media (min-width: 426px) and (max-width: 768px) {
-    height: 60vh;
+  @media (min-width: 450px) and (max-width: 768px) {
+    // height: 60vh;
     width: 80vw;
   }
-  @media (min-width: 100px) and (max-width: 425px) {
-    height: 60vh;
+  @media (min-width: 100px) and (max-width: 549px) {
+    margin-top: 100px;
     width: 100vw;
   }
 `;
@@ -42,16 +43,13 @@ export const HeaderText = styled.h1`
   @media (max-width: 425px) {
     font-size: 1.5em;
   }
-  @media (max-width: 375px) {
-    font-size: 1.2em;
-  }
-  @media (max-width: 320px) {
-    font-size: 1em;
-  }
 `;
 
 export const Skills = styled.h4`
   margin: 10px 50px;
+  @media (max-width: 425px) {
+    font-size: 1em;
+  }
 `;
 
 export const LandingSocials = styled.div`

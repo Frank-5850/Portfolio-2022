@@ -24,7 +24,6 @@ const LandingPage = () => {
         <HeaderText>I enjoy developing the web</HeaderText>
         <Skills>MERN stack developer</Skills>
         <LandingSocials>
-          {" "}
           <IconBox>
             <IconLink href="https://github.com/Frank-5850" target="_blank">
               <FaGithubSquare size="1.5em" />

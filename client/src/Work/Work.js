@@ -22,6 +22,8 @@ import {
   CurrentProjectIcon,
   CarouselButtonLeft,
   CarouselButtonRight,
+  MobileWorkContainer,
+  MobileWorkCard,
 } from "./Work.styles";
 
 const Work = () => {
@@ -96,12 +98,37 @@ const Work = () => {
     <WorkWrapper id="work">
       <WorkContainer>
         <SectionTitle>Work</SectionTitle>
+        <MobileWorkContainer>
+          {currentProjects.map((project) => (
+            <MobileWorkCard>
+              <PhotoLink href={project.link} target="_blank">
+                <WorkPhoto src={project.photo} alt={project.name} />
+              </PhotoLink>
+              <WorkDetailContainer>
+                <WorkTitle>{project.name}</WorkTitle>
+                <WorkDetail>{project.description}</WorkDetail>
+                <TechList>
+                  {project.tech.map((tech) => (
+                    <Tech key={tech}>{tech}</Tech>
+                  ))}
+                </TechList>
+                <WorkLinkContainer>
+                  <WorkLink href={project?.github} target="_blank">
+                    <GithubIcon />
+                  </WorkLink>
+                  <WorkLink href={project.link} target="_blank">
+                    <WebsiteIcon />
+                  </WorkLink>
+                </WorkLinkContainer>
+              </WorkDetailContainer>
+            </MobileWorkCard>
+          ))}
+        </MobileWorkContainer>
         {project && (
           <WorkCarousel>
             <PhotoLink href={project.link} target="_blank">
               <WorkPhoto src={project.photo} alt={project.name} />
             </PhotoLink>
-            c
             <WorkDetailContainer>
               <WorkTitle>{project.name}</WorkTitle>
               <WorkDetail>{project.description}</WorkDetail>

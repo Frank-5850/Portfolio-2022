@@ -1,6 +1,10 @@
 import React from "react";
 import {
   NavWrapper,
+  IconContainer,
+  HamburgerIconContainer,
+  HamburgerIcon,
+  HamburgerLinks,
   NavGroup,
   NavItem,
   Resume,
@@ -9,24 +13,36 @@ import {
   LogoImg,
   ResumeLink,
 } from "./nav.styles";
-import logo from "../assets/FP.png";
+import logo from "../assets/logo.png";
+import { useState } from "react";
+import "../App.css";
 
 const Nav = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <NavContainer>
       <NavWrapper className="navbar">
-        <NavGroup style={{ padding: "0" }}>
+        <IconContainer>
           <NavItem style={{ padding: "0" }}>
             <NavLink href="/">
               <LogoImg src={logo} alt="logo" />
             </NavLink>
           </NavItem>
-        </NavGroup>
-        <input type="checkbox" id="toggler" />
-        <label htmlFor="toggler">
-          <i className="ri-menu-line"></i>
-        </label>
-        <NavGroup className="list">
+        </IconContainer>
+        <HamburgerIconContainer>
+          <HamburgerIcon onClick={toggleMobileMenu}>
+            X
+            {/* <HamburgerLinks>About</HamburgerLinks>
+            <HamburgerLinks>Work</HamburgerLinks>
+            <HamburgerLinks>Contact</HamburgerLinks> */}
+          </HamburgerIcon>
+        </HamburgerIconContainer>
+        <NavGroup>
           <NavItem>
             <NavLink href="#aboutMe">About</NavLink>
           </NavItem>

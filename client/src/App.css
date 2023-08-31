@@ -1,6 +1,6 @@
 * {
-  background-color: #6c757d;
-  color: white;
+  background-color: #faf9f6;
+  color: #818589;
   scroll-behavior: smooth;
   font-weight: bold;
   box-sizing: border-box;
@@ -9,4 +9,12 @@
 #toggler,
 .navbar label {
   display: none; /*Hide the checkbox and label on large screens.*/
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
