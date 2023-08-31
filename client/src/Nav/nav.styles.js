@@ -7,7 +7,7 @@ export const NavContainer = styled.div`
   z-index: 2;
   border-bottom: 1px solid #818589;
   padding-bottom: 5px;
-  @media (min-width: 100px) and (max-width: 549px) {
+  @media (min-width: 100px) and (max-width: 501px) {
     padding: 10px 0;
     width: 100vw;
   }
@@ -19,7 +19,7 @@ export const NavWrapper = styled.nav`
   align-items: center;
   margin: 0;
   padding: 20px 30px;
-  @media (min-width: 100px) and (max-width: 549px) {
+  @media (min-width: 100px) and (max-width: 501px) {
     padding: 0px;
   }
 `;
@@ -44,7 +44,7 @@ export const HamburgerIcon = styled.div`
   cursor: pointer;
   height: 60px;
   width: 60px;
-  @media (min-width: 100px) and (max-width: 549px) {
+  @media (min-width: 100px) and (max-width: 501px) {
     padding: 0px;
     display: block;
     margin-right: 10px;
@@ -67,7 +67,7 @@ export const NavGroup = styled.ul`
   margin: 0;
   list-style: none;
   padding: 0;
-  @media (max-width: 549px) {
+  @media (max-width: 501px) {
     display: none;
   }
 `;
@@ -93,28 +93,24 @@ export const NavLink = styled.a`
   cursor: pointer;
   position: relative;
   &:after {
-    content: ""; /*Content property must be set else this element will not show up on the page. */
+    content: "";
     width: 100%;
     height: 1px;
     background-color: grey;
-    border-radius: 4px; /*Applies roundness to the bar. */
-    position: absolute; /*Allows for this element to be moved freely within the parent box that has the position of relative. */
-    left: 0; /*Starting left position will be 0. */
-    bottom: 0; /*Starting bottom position will be 0 since we want to place this element under the link text. */
-    transform: scaleX(
-      0
-    ); /*We scale the width of this element on the X axis to 0 because we do not want to see it until hovered. */
-    transform-origin: left; /*By default, transform origin is the center, meaning the bar would grow from the center if we don't change this. We set it to the left so that it grows from the left instead. */
-    transition: transform 0.25s ease; /*Since we want to animate the transform property that is what we apply the transition to. */
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
   }
   &:hover::after {
-    transform: scaleX(
-      1
-    ); /*When the link is hovered, we target the pseudo-element and turn the scaleX back to 1. This will make it grow back to the initial width of 100%. */
+    transform: scaleX(1);
   }
-  // &:hover {
-  //   color: black;
-  // }
+  &:hover {
+    color: black;
+  }
   @media (max-width: 375px) {
     font-size: 1em;
   }

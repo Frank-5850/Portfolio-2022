@@ -1,4 +1,3 @@
-//
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div``;
@@ -10,7 +9,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-  @media (min-width: 100px) and (max-width: 449px) {
+  @media (min-width: 100px) and (max-width: 502px) {
     width: 100vw;
     height: auto;
     margin: 50px 0px;

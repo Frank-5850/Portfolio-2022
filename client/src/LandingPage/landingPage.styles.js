@@ -5,9 +5,14 @@ export const LandingPageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
-  @media (min-width: 100px) and (max-width: 549px) {
+  @media (min-width: 502px) and (max-width: 768px) {
+    margin: 100px 0px;
+    height: auto;
+    width: auto;
+  }
+  @media (min-width: 100px) and (max-width: 501px) {
     margin: 20px 0px;
     height: auto;
     width: auto;
@@ -20,11 +25,12 @@ export const LandingPageContainer = styled.div`
   justify-content: center;
   height: 50vh;
   width: 50vw;
-  @media (min-width: 450px) and (max-width: 768px) {
-    // height: 60vh;
-    width: 80vw;
+  @media (min-width: 502px) and (max-width: 768px) {
+    margin: 100px 0px;
+    height: auto;
+    width: auto;
   }
-  @media (min-width: 100px) and (max-width: 549px) {
+  @media (min-width: 100px) and (max-width: 501px) {
     margin-top: 100px;
     width: 100vw;
   }

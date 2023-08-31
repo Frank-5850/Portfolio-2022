@@ -155,7 +155,7 @@ const Work = () => {
           {currentProjects.map((project, i) => (
             <CurrentProjectIcon
               onClick={() => setIndex(i)}
-              fill={i === index ? "black" : "white"}
+              fill={i === index ? "black" : "grey"}
               key={i}
             />
           ))}

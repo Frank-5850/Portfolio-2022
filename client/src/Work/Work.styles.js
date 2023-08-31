@@ -1,209 +1,3 @@
-// import styled from "styled-components";
-// import { FaGithubSquare } from "react-icons/fa";
-// import { MdOpenInNew } from "react-icons/md";
-// import {
-//   RiCheckboxBlankCircleLine,
-//   RiArrowRightSLine,
-//   RiArrowLeftSLine,
-// } from "react-icons/ri";
-
-// export const WorkWrapper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100vh;
-//   width: 100vw;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     min-height: 80vh;
-//   }
-// `;
-
-// export const WorkContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   height: 50vh;
-//   width: 50vw;
-//   @media (min-width: 426px) and (max-width: 1024px) {
-//     width: 70vw;
-//   }
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     width: 100vw;
-//   }
-// `;
-
-// export const SectionTitle = styled.h1`
-//   margin: 0 0 10px 0;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     margin: 0 0 10px 10px;
-//   }
-// `;
-
-// export const WorkCarousel = styled.div`
-//   display: flex;
-//   align-items: center;
-//   position: relative;
-//   @media (min-width: 426px) and (max-width: 768px) {
-//     justify-content: center;
-//   }
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     justify-content: center;
-//     flex-direction: column;
-//   }
-// `;
-
-// export const PhotoLink = styled.a`
-//   text-decoration: none;
-//   border-radius: 5px;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     display: flex;
-//     flex-direction: center;
-//     align-items: center;
-//   }
-// `;
-
-// export const WorkPhoto = styled.img`
-//   width: 600px;
-//   height: 400px;
-//   border-radius: 5px;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     width: 95vw;
-//     height: auto;
-//   }
-// `;
-
-// export const WorkDetailContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   height: 250px;
-//   width: 400px;
-//   background-color: black;
-//   position: absolute;
-//   right: 0;
-//   z-index: 1;
-//   padding: 10px;
-//   border-radius: 5px;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     width: 75vw;
-//     height: auto;
-//     position: relative;
-//     background-color: #6c757d;
-//   }
-// `;
-
-// export const WorkTitle = styled.h1`
-//   margin: 0 10px 10px 0;
-//   background-color: black;
-//   align-self: end;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//     align-self: start;
-//   }
-// `;
-
-// export const WorkDetail = styled.p`
-//   margin: 10px 0;
-//   background-color: black;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//   }
-// `;
-
-// export const TechList = styled.ul`
-//   margin: 0;
-//   display: flex;
-//   flex-flow: column wrap;
-//   height: 20%;
-//   background-color: black;
-//   padding: 0;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//   }
-// `;
-
-// export const Tech = styled.li`
-//   list-style: none;
-//   margin: 0;
-//   background-color: black;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//   }
-// `;
-
-// export const WorkLinkContainer = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: flex-end;
-//   background-color: black;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//   }
-// `;
-
-// export const WorkLink = styled.a`
-//   text-decoration: none;
-//   margin: 0 5px;
-//   background-color: black;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//   }
-// `;
-
-// export const GithubIcon = styled(FaGithubSquare)`
-//   color: white;
-//   font-size: 1.5em;
-//   margin: 0 5px;
-//   background-color: black;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//   }
-// `;
-// export const WebsiteIcon = styled(MdOpenInNew)`
-//   color: white;
-//   font-size: 1.5em;
-//   margin: 0 5px;
-//   background-color: black;
-//   @media (min-width: 100px) and (max-width: 425px) {
-//     background-color: #6c757d;
-//   }
-// `;
-
-// export const CarouselController = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0.5rem;
-//   margin: 0;
-// `;
-
-// export const CarouselButton = styled.button`
-//   color: white;
-//   border: none;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 1.5em;
-// `;
-
-// export const CarouselButtonLeft = styled(RiArrowLeftSLine)`
-//   color: white;
-//   cursor: pointer;
-//   margin: 0 10px;
-// `;
-
-// export const CarouselButtonRight = styled(RiArrowRightSLine)`
-//   color: white;
-//   cursor: pointer;
-//   margin: 0 10px;
-// `;
-
-// export const CurrentProjectIcon = styled(RiCheckboxBlankCircleLine)`
-//   color: white;
-//   margin: 0 5px;
-//   cursor: pointer;
-// `;
-
 import styled from "styled-components";
 import { FaGithubSquare } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
@@ -213,42 +7,80 @@ import {
   RiArrowLeftSLine,
 } from "react-icons/ri";
 
-export const WorkWrapper = styled.div``;
+export const WorkWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export const WorkContainer = styled.div`
-  @media (max-width: 449px) {
-    padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 1025px) {
+    width: 80vw;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    width: 90vw;
+  }
+  @media (min-width: 502px) and (max-width: 768px) {
+    padding: 0px 75px;
+  }
+  @media (max-width: 501px) {
+    width: 95%;
   }
 `;
 
 export const SectionTitle = styled.h1``;
 
 export const WorkCarousel = styled.div`
-  @media (min-width: 100px) and (max-width: 449px) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  @media (min-width: 1025px) {
+    display: flex;
+    flex-flow: row;
+  }
+  @media (min-width: 100px) and (max-width: 768px) {
     display: none;
   }
 `;
 
 export const PhotoLink = styled.a`
-  @media (min-width: 100px) and (max-width: 449px) {
+  @media (min-width: 100px) and (max-width: 501px) {
     width: 80%;
-    height: auto;
   }
 `;
 
 export const WorkPhoto = styled.img`
-  @media (min-width: 100px) and (max-width: 449px) {
+  @media (min-width: 1025px) {
+    width: 100%;
+  }
+  @media (min-width: 502px) and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  @media (min-width: 100px) and (max-width: 501px) {
     width: 100%;
     height: auto;
     border-radius: 5px;
   }
 `;
 
-export const WorkDetailContainer = styled.div``;
+export const WorkDetailContainer = styled.div`
+  @media (min-width: 1025px) {
+    padding-left: 20px;
+  }
+`;
 
-export const WorkTitle = styled.h1``;
+export const WorkTitle = styled.h1`
+  margin: 0 10px 10px 0;
+`;
 
-export const WorkDetail = styled.p``;
+export const WorkDetail = styled.p`
+  margin: 10px 0;
+`;
 
 export const TechList = styled.ul`
   padding: 0;
@@ -265,9 +97,16 @@ export const Tech = styled.li`
   border-radius: 5px;
 `;
 
-export const WorkLinkContainer = styled.div``;
+export const WorkLinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+`;
 
-export const WorkLink = styled.a``;
+export const WorkLink = styled.a`
+  text-decoration: none;
+  margin: 0 5px;
+`;
 
 export const GithubIcon = styled(FaGithubSquare)`
   color: white;
@@ -282,25 +121,44 @@ export const WebsiteIcon = styled(MdOpenInNew)`
 `;
 
 export const CarouselController = styled.div`
-  @media (min-width: 100px) and (max-width: 449px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0;
+  @media (min-width: 100px) and (max-width: 769px) {
     display: none;
   }
 `;
 
-export const CarouselButton = styled.button``;
+export const CarouselButton = styled.button`
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+`;
 
-export const CarouselButtonLeft = styled(RiArrowLeftSLine)``;
+export const CarouselButtonLeft = styled(RiArrowLeftSLine)`
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+`;
 
-export const CarouselButtonRight = styled(RiArrowRightSLine)``;
+export const CarouselButtonRight = styled(RiArrowRightSLine)`
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+`;
 
 export const CurrentProjectIcon = styled(RiCheckboxBlankCircleLine)`
-  color: white;
   margin: 0 5px;
   cursor: pointer;
 `;
 
 export const MobileWorkContainer = styled.div`
-  @media (min-width: 450px) {
+  @media (min-width: 769px) {
     display: none;
   }
 `;
