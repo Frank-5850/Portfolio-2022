@@ -32,7 +32,8 @@ const Work = () => {
   const currentProjects = [
     {
       name: "Cup of Peace",
-      description: "Cup of Peace is company ",
+      description:
+        "A tea lovers dream come true - a webstore dedicated to deliver customers a beverage that soothes and rejuvenates them to their doorsteps.   ",
       link: "https://cop-dev-8ea10.web.app",
       github: undefined,
       tech: ["React", "Typescript", "Firebase", "Stripe", "Material UI"],
