@@ -64,17 +64,10 @@ export const WorkPhoto = styled.img`
   border-radius: 10px;
   border: solid 1px black;
   width: 100%;
-  @media (min-width: 1025px) {
-    width: 100%;
-  }
   @media (min-width: 502px) and (max-width: 768px) {
-    min-width: 100%;
-    height: auto;
     border-radius: 5px;
   }
   @media (min-width: 100px) and (max-width: 501px) {
-    width: 100%;
-    height: auto;
     border-radius: 5px;
   }
 `;
