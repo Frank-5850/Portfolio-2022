@@ -21,6 +21,7 @@ export const NavWrapper = styled.nav`
   padding: 20px 30px;
   @media (min-width: 100px) and (max-width: 501px) {
     padding: 0px;
+    justify-content: center;
   }
 `;
 
@@ -31,6 +32,9 @@ export const IconContainer = styled.ul`
   margin: 0;
   padding: 0;
   margin-left: 10px;
+  @media (min-width: 100px) and (max-width: 501px) {
+    align-self: center;
+  }
 `;
 
 export const HamburgerIconContainer = styled.div`

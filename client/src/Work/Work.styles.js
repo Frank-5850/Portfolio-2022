@@ -18,25 +18,29 @@ export const WorkContainer = styled.div`
   flex-direction: column;
   align-items: center;
   @media (min-width: 1025px) {
-    width: 80vw;
+    width: 65vw;
   }
   @media (min-width: 769px) and (max-width: 1024px) {
-    width: 90vw;
+    width: 80vw;
   }
   @media (min-width: 502px) and (max-width: 768px) {
     padding: 0px 75px;
+    width: 90vw;
   }
   @media (max-width: 501px) {
     width: 95%;
   }
 `;
 
-export const SectionTitle = styled.h1``;
+export const SectionTitle = styled.h1`
+  align-self: start;
+`;
 
 export const WorkCarousel = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  align-items: center;
   @media (min-width: 1025px) {
     display: flex;
     flex-flow: row;
@@ -47,17 +51,24 @@ export const WorkCarousel = styled.div`
 `;
 
 export const PhotoLink = styled.a`
+  border-radius: 10px;
+  @media (min-width: 502px) and (max-width: 768px) {
+    width: 80%;
+  }
   @media (min-width: 100px) and (max-width: 501px) {
     width: 80%;
   }
 `;
 
 export const WorkPhoto = styled.img`
+  border-radius: 10px;
+  border: solid 1px black;
+  width: 100%;
   @media (min-width: 1025px) {
     width: 100%;
   }
   @media (min-width: 502px) and (max-width: 768px) {
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border-radius: 5px;
   }
@@ -71,6 +82,9 @@ export const WorkPhoto = styled.img`
 export const WorkDetailContainer = styled.div`
   @media (min-width: 1025px) {
     padding-left: 20px;
+    min-width: 40%;
+    max-width: 50%;
+    align-self: start;
   }
 `;
 

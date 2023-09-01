@@ -34,14 +34,14 @@ const Nav = () => {
             </NavLink>
           </NavItem>
         </IconContainer>
-        <HamburgerIconContainer>
+        {/* <HamburgerIconContainer>
           <HamburgerIcon onClick={toggleMobileMenu}>
             X
-            {/* <HamburgerLinks>About</HamburgerLinks>
+            <HamburgerLinks>About</HamburgerLinks>
             <HamburgerLinks>Work</HamburgerLinks>
-            <HamburgerLinks>Contact</HamburgerLinks> */}
+            <HamburgerLinks>Contact</HamburgerLinks>
           </HamburgerIcon>
-        </HamburgerIconContainer>
+        </HamburgerIconContainer> */}
         <NavGroup>
           <NavItem>
             <NavLink href="#aboutMe">About</NavLink>

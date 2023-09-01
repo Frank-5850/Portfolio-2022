@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import weather from "../assets/photos/Weather.jpg";
 import eastBay from "../assets/photos/EastBay.jpg";
+import luma from "../assets/photos/Luma.JPG";
+import cop from "../assets/photos/CupOfPeace.JPG";
 import {
   WorkWrapper,
   WorkContainer,
@@ -35,17 +37,48 @@ const Work = () => {
     {
       name: "Cup of Peace",
       description:
-        "A tea lovers dream come true - a webstore dedicated to deliver customers a beverage that soothes and rejuvenates them to their doorsteps.   ",
+        "Welcome to Cup of Peace, where we bring tranquility to your doorstep, one cup at a time. We specialize in curating and delivering a diverse range of ethically sourced teas from around the world through our unique subscription service. Our mission is clear: to promote peace and serenity through the art of tea. Whether you're a casual tea enthusiast or a devoted connoisseur, our thoughtfully crafted subscription tiers cater to your individual tastes, inviting you on a peaceful journey to wellness and sensory awakening. Explore the world of tea with us and discover the profound power of every sip.",
       link: "https://cop-dev-8ea10.web.app",
       github: undefined,
       tech: ["React", "Typescript", "Firebase", "Stripe", "Material UI"],
-      photo: weather,
+      photo: cop,
+    },
+    {
+      name: "Luma Action",
+      description:
+        "Luma Action, a dynamic force in policy planning, advocacy, and organizational development, empowers partners and clients to address complex issues and uplift communities. As a web developer, I had the privilege of contributing to their online presence, helping them illuminate the path towards positive change. This project highlights my ability to translate a powerful mission into an engaging digital platform.",
+      link: "https://glassmorphic-weather.herokuapp.com/home",
+      github: undefined,
+      tech: [
+        "React",
+        "TypeScript",
+        "SaSS",
+        "email-js-com",
+        "bluehost",
+        "cPanel",
+      ],
+      photo: luma,
+    },
+    {
+      name: "East Bay Recorders",
+      description:
+        "Introducing East Bay Recorders, an inviting and creative studio where music comes to life. This unique space boasts an impressive collection of instruments, vintage recording equipment, state-of-the-art digital tools, and a valuable network of top-notch San Francisco Bay Area session musicians. East Bay Recorders is where authentic music experiences are born, and I'm proud to have contributed to its digital presence as a web developer. This project showcases my ability to capture the essence of a creative space and translate it into an engaging online platform.",
+      link: "https://eastbayrecorders.com/",
+      github: "https://github.com/andrewjspivey/eastbay_recorders",
+      tech: [
+        "React",
+        "Node",
+        "styled-components",
+        "Material UI",
+        "React-Router",
+      ],
+      photo: eastBay,
     },
     {
       name: "Weather App",
       description:
-        "Simple weather application build using the Open-Weather API. Users are able to get the weather, 24 hour forecast and 7 day forecast for their current location or search a location.",
-      link: "https://glassmorphic-weather.herokuapp.com/home",
+        "Explore my Weather Web Application, a dynamic project that delivers precise weather forecasts for the next 24 hours and the upcoming 7 days, alongside real-time weather conditions, temperature data, and more. This intuitive application seamlessly integrates location-based services, allowing users to access weather insights based on their current location or a customized search. What sets this project apart is its elegant design, inspired by the captivating principles of glassmorphism, creating an aesthetically pleasing and user-friendly experience. This showcase in my portfolio highlights my web development skills and commitment to combining functionality with cutting-edge design.",
+      link: "https://react-weather-front-368w.onrender.com/",
       github: "https://github.com/Frank-5850/weather-react",
       tech: [
         "React",
@@ -56,21 +89,6 @@ const Work = () => {
         "styled-components",
       ],
       photo: weather,
-    },
-    {
-      name: "East Bay Recorders",
-      description:
-        "East Bay Recorders is an intimate, vibey studio where real music gets made. I had the pleasure to modernize the front-end with Andrew Spivey.",
-      link: "eastbayrecorders.com",
-      github: "https://github.com/andrewjspivey/eastbay_recorders",
-      tech: [
-        "React",
-        "Node",
-        "styled-components",
-        "Material UI",
-        "React-Router",
-      ],
-      photo: eastBay,
     },
   ];
 
@@ -97,7 +115,7 @@ const Work = () => {
   return (
     <WorkWrapper id="work">
       <WorkContainer>
-        <SectionTitle>Work</SectionTitle>
+        <SectionTitle>Recent Work</SectionTitle>
         <MobileWorkContainer>
           {currentProjects.map((project) => (
             <MobileWorkCard>
@@ -113,9 +131,11 @@ const Work = () => {
                   ))}
                 </TechList>
                 <WorkLinkContainer>
-                  <WorkLink href={project?.github} target="_blank">
-                    <GithubIcon />
-                  </WorkLink>
+                  {project.github && (
+                    <WorkLink href={project?.github} target="_blank">
+                      <GithubIcon />
+                    </WorkLink>
+                  )}
                   <WorkLink href={project.link} target="_blank">
                     <WebsiteIcon />
                   </WorkLink>
@@ -138,9 +158,11 @@ const Work = () => {
                 ))}
               </TechList>
               <WorkLinkContainer>
-                <WorkLink href={project?.github} target="_blank">
-                  <GithubIcon />
-                </WorkLink>
+                {project?.github && (
+                  <WorkLink href={project?.github} target="_blank">
+                    <GithubIcon />
+                  </WorkLink>
+                )}
                 <WorkLink href={project.link} target="_blank">
                   <WebsiteIcon />
                 </WorkLink>

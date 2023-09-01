@@ -26,7 +26,7 @@ export const SocialsContainer = styled.ul`
     width: 1px;
     height: 300px;
     margin: 0px auto;
-    background-color: white;
+    background-color: grey;
   }
 `;
 
